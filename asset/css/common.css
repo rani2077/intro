@@ -1,0 +1,204 @@
+.container{
+    width: 768px;
+    margin: 150px auto 0;
+    background: #fff;
+    padding-bottom: 250px;
+}
+
+.video{
+    width: 100%;
+}
+.video source{
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+}
+
+
+
+/* 목차 */
+.sc-index{
+    background: #f8f9fa;
+    padding: 32px 24px;
+    border-radius: 8px;
+}
+.sc-index .index-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.sc-index .group-index{
+    overflow: hidden;
+    height: 0;
+}
+.sc-index .group-index .index{
+    display:list-item;
+    list-style-type:decimal;
+    list-style-position:inside;
+    line-height: 1.8;
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+}
+.sc-index .group-index .index:hover{
+    color: #000;
+}
+.sc-index .group-index .index.on{
+    color: #20c997;
+    font-weight: 600;
+}
+.sc-index .group-btn{
+    position: relative;
+}
+.sc-index .group-btn::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    top: 50%;
+    left: 0;
+    transition: transform 500ms;
+    transform: translate(0, -50%) rotate(0deg);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.sc-index .group-btn.on::before{
+    transform: translate(0, -50%) rotate(180deg);
+}
+.sc-index .group-btn .btn{
+    display: none;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.sc-index .group-btn .btn:hover{
+    cursor:pointer;
+}
+.sc-index .group-btn .btn.on{
+    display: block;
+}
+
+
+
+/* 간격 */
+.gap{
+    margin: 18px 0;
+}
+.image{
+    margin-top: 40px;
+}
+video{
+    margin-top: 40px;
+}
+/* 들여쓰기 */
+.indent{
+    margin-left: 35px;
+    position: relative;
+    display: list-item;
+    list-style-type:disc;
+    list-style-position:outside;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+/* 목차 리스트 */
+.number{
+    list-style-type:decimal;
+    display: list-item;
+    margin-left: 35px;
+    color: #000;
+    transition:color 300ms;
+}
+.number:hover{
+    color: #20c997;
+}
+
+/* 메인제목 */
+.main-title{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 38px;
+}
+/* 제목 */
+.title{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 26px 0 16px;
+}
+
+
+/* 참조이동 */
+.link-comment{
+    background: #e9ecef;
+    color: #20c997;
+    border-radius:3px;
+    padding: 1px 5px;
+    transition:background 300ms;
+}
+.link-comment:hover{
+    background: #555555;
+}
+
+/* text-warpper */
+.text-wrapper{
+    background:#f8f9fa;
+    border-left: 4px solid #20c997;
+    border-radius:0 5px 5px 0;
+    padding: 20px 20px;
+}
+
+/* 섹션 껏다키기 */
+.sc-section{
+    display: none;
+}
+.on{
+    display: block;
+}
+
+/* 호버 힌트*/
+.link-portfolio{
+    position: relative;
+    color: #000;
+    transition:color 300ms;
+}
+.link-portfolio:hover{
+    color: rgb(95, 95, 95);
+}
+.link-portfolio:after{
+    opacity:0;
+    content:'클릭시 포트폴리오 사이트로 이동';
+    font-size: 14px;
+    display: block;
+    background: rgb(223, 223, 223);
+    position: absolute;
+    padding: 3px 5px 8px;
+    white-space:nowrap;
+    top: -18px;
+    left: 0px;
+    transition:300ms;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 17% 75%, 17% 100%, 13% 75%, 0% 75%);
+}
+.link-portfolio:hover:after{
+    opacity: 1;
+    color: #000;
+}
+
+
+/* 푸터 */
+footer{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    background: rgb(230, 230, 230);
+}
+
+
+
+
+
+/* 모바일 768px */
+
+@media (max-width:767px){
+    
+}
